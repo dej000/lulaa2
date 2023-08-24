@@ -106,7 +106,7 @@
           <div class="bg-white post p-4">
             <p class="text-secondary">Rock your own way</p>
             <h2>Unique style <br> tailored for you</h2>
-            <p>Our team of experts handpicks an array <br> of clothing and accessories that reflect <br> the latest trends while also considering <br> your personal preferences.</p>
+            <p>Our team of experts handpicks an array of clothing and accessories that  <br> reflect  the latest trends while also considering your personal  <br> preferences.</p>
             <button class="butt">Get Started</button>
           </div>
         </div>
@@ -696,9 +696,12 @@ h1{
 }
 .post{
   
-    
-    top: 226px;
-    left: 180px;
+    position: relative;
+    top: 167px;
+    left: 172px;
+    background: #f8f9fa;
+    padding: 20px;
+    width: 100%;
 
 }
 
@@ -763,7 +766,11 @@ h1{
 
   .post{
   
-  
+    position: relative;
+    top: -3px;
+    left: -3px;
+    background: #f8f9fa;
+  padding: 0;
 
 }
 }
