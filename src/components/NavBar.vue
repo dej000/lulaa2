@@ -81,8 +81,9 @@ import Logo from './Logo.vue';
            
             <router-link @click="scrollToTop"    class="nav-link "  to="">FAQ</router-link>
             <router-link @click="scrollToTop"    class="nav-link "  to="">Pricing</router-link>
-             <a href=""><button type="button" class="btn sign  ">Login</button> </a> 
-             
+            <router-link @click="scrollToTop"     class="btn sign"  to="">Login</router-link>
+             <!-- <a href=""><button type="button" class="btn sign  ">Login</button> </a> 
+              -->
          </div>
         </div>
        
@@ -105,8 +106,8 @@ import Logo from './Logo.vue';
            <router-link  @click="toggleMobileNav() "  class="nav-link"  to="">Contact</router-link>
             
            <div class="d-flex flex-column ">
-            
-             <a href=""><button type="button" class="sign ">Login</button> </a> 
+            <router-link @click="toggleMobileNav()"    class="btn sign"  to="">Login</router-link>
+             <!-- <a href=""><button type="button" class="sign ">Login</button> </a>  -->
              
          </div>
        
