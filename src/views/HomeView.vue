@@ -657,7 +657,7 @@ h1{
 }
 .left {
   flex: 40%;
-  
+  background-color:  #FFFEF8;
  
 }
 
@@ -767,10 +767,11 @@ h1{
   .post{
   
     position: relative;
-    top: -3px;
+    top: -25px;
     left: -3px;
     background: #f8f9fa;
   padding: 0;
+  width: 285px;
 
 }
 }
