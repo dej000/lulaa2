@@ -98,12 +98,12 @@
     </div>
   </section>
 
-  <section class="d-flex mt-5 mb-5 justify-content-between  rev" data-aos="fade-up">
+  <section class="d-flex mt-5 mb-5 justify-content-between  rev" >
 
     <div class="d-flex justify-content-center rev">
       
         <div class="left d-flex flex-column justify-content-between align-items-center">
-          <div class="bg-white post p-4">
+          <div class="bg-white post p-4" data-aos="fade-up">
             <p class="text-secondary">Rock your own way</p>
             <h2>Unique style <br> tailored for you</h2>
             <p>Our team of experts handpicks an array of clothing and accessories that  <br> reflect  the latest trends while also considering your personal  <br> preferences.</p>
