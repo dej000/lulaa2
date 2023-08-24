@@ -82,8 +82,7 @@ import Logo from './Logo.vue';
             <router-link @click="scrollToTop"    class="nav-link "  to="">FAQ</router-link>
             <router-link @click="scrollToTop"    class="nav-link "  to="">Pricing</router-link>
             <router-link @click="scrollToTop"     class="btn sign"  to="">Login</router-link>
-             <!-- <a href=""><button type="button" class="btn sign  ">Login</button> </a> 
-              -->
+            
          </div>
         </div>
        
@@ -158,7 +157,7 @@ font-size: 16px !important;
   left: 0;
   width: 100%;
   right: 0;
-  background:rgb(6, 6, 6);
+  background:rgb(255, 249, 249,-9.1);
   z-index: 9999;
 
   
@@ -220,14 +219,14 @@ font-size: 16px;
   transition: height .2s ease-in-out;
   padding: 20px;
   font-size: 40px; 
-  color: #383850;
+  color: #ffffff;
   z-index: 100;
 } 
 
  .nav-links{
   
   font-size: 40px; 
-  color: #383850;
+  color: #ffffff;
   
 } 
 
@@ -240,7 +239,7 @@ font-size: 16px;
 }
 
 .dropdown-nav a{
-  color: #656588;
+  color: #97979c;
   text-decoration: none;
   padding: 5px;
 }
@@ -277,7 +276,7 @@ ul.navigation{
 
 nav.navbar a{
   box-shadow: inset 0 0 0 0 #4e5051;
-  color: #000000; 
+  color: #ffffff; 
   padding: 4px;
   font-size: 20px;
   transition: color .3s ease-in-out, box-shadow .3s ease-in-out ;
@@ -315,7 +314,7 @@ nav.navbar a{
   
    header nav.navbar a{
       box-shadow: inset 0 0 0 0 #54b3d6;
-      color: #383850;
+      color: #fcfcfc;
       font-weight:bold;
       padding: 4px;
       font-size: 14px;

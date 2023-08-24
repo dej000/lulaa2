@@ -1,11 +1,15 @@
 <template>
   <NavBar/> 
-  <section class="container">
-    <div class="hero vh-100 d-flex flex-column justify-content-center align-items-center " data-aos="flip-up" data-aos-duration="3000">
-      <p>Unlish your inner fashionista</p>
-    <h1 class="text-center">Personalized shopping for <br> every woman</h1>
-    <p>No more sifting through endless racks or scrolling through countless pages - we bring you a curated selection that is tailored to you.</p>
-    <button >Discover my style</button>
+  <section class="containe mb-5">
+    <div class="hero vh-100 d-flex flex-column justify-content-center align-items-center " >
+      <div class="overlay"></div>
+      <div class="d-flex flex-column justify-content-center align-items-center container gap-4 " data-aos="flip-up" data-aos-duration="3000">
+        <p class="text-white">Unlish your inner fashionista</p>
+    <h1 class="text-center text-white">Personalized shopping for <br> every woman</h1>
+    <p class=" text-white">No more sifting through endless racks or scrolling through countless pages - we bring you a curated selection that is tailored to you.</p>
+    <button class="butt3 p-3" >Discover my style</button>
+      </div>
+      
     </div>
   </section>
 
@@ -94,27 +98,31 @@
     </div>
   </section>
 
-  <section class="d-flex mt-5 mb-5" data-aos="fade-up">
-    <div class="left">
-      <div class="d-flex flex-column justify-content-center align-items-center ">
-        <div class="bg-white p-5 post">
-          <p class="text-secondary">Rock your own way</p>
-        <h2>Unique style <br> tailored for you</h2>
-       
-          <p>Our team of experts handpicks an array <br> of clothing and accessories that reflect <br> the latest trends while also considering <br> your personal preferences.</p>
-          <button  class="butt">Get Started</button>
-       
-      </div>  
-      </div>
-    </div>
-    <div class="right" >
+  <section class="d-flex mt-5 mb-5 justify-content-between  rev" data-aos="fade-up">
+
+    <div class="d-flex justify-content-center rev">
       
-      <img :src="frame1" alt=""> 
-    </div>
+        <div class="left d-flex flex-column justify-content-between align-items-center">
+          <div class="bg-white post p-4">
+            <p class="text-secondary">Rock your own way</p>
+            <h2>Unique style <br> tailored for you</h2>
+            <p>Our team of experts handpicks an array <br> of clothing and accessories that reflect <br> the latest trends while also considering <br> your personal preferences.</p>
+            <button class="butt">Get Started</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="right">
+          <img style="width:100%" :src="frame1" alt="">  
+       </div>
+  
+    </div> 
+    
   </section>
 
   <section class="container mb-5" data-aos="fade-up">
     <div class="row gap-5" data-aos="fade-up">
+      
       <div>
         <p class="text-secondary">spend on things you’ll love</p>
       <h2>Experience quality like <br> never before</h2>
@@ -125,7 +133,7 @@
       </div>
       
       <div data-aos="fade-up">
-        <img :src="pexel" alt=""> 
+        <img style="width:100%" :src="pexel" alt=""> 
       </div>
     </div>
    
@@ -629,11 +637,28 @@ data(){
  
 }
 
+.hero{
+  background-image: url(../assets/pexels-tima-miroshnichenko-7202776.png);
+  background-size: cover; /* Adjust how the image is displayed */
+  background-position: center; /* Position the image within the container */
+  height: 100vh; /* Adjust the height of the hero section */
+}
 
+h1{
+  font-size: 52px;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity here */
+}
 .left {
   flex: 40%;
-  background-color:#FFFEF8;
-  padding: 20px;
+  
+ 
 }
 
 .right {
@@ -651,6 +676,16 @@ data(){
 
 }
 
+.butt3{
+  
+  padding: 7px;
+  background:rgb(255, 249, 249,-9.1);
+  color: white;
+  outline: none;
+  border: 1px solid white;
+
+}
+
 .butt2{
   
   padding: 7px;
@@ -661,7 +696,7 @@ data(){
 }
 .post{
   
-    position: absolute;
+    
     top: 226px;
     left: 180px;
 
@@ -715,4 +750,22 @@ data(){
 	0%   { transform: translateX(0%); }
 	100% { transform: translateX(-100%); }
 }
+
+@media(max-width :770px){
+  .rev{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .rev img{
+    display: none;
+  }
+
+  .post{
+  
+  
+
+}
+}
+
 </style>
