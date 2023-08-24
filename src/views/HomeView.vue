@@ -761,7 +761,7 @@ h1{
   }
 
   .rev img{
-    display: none;
+    
   }
 
   .post{
